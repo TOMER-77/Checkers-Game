@@ -5,7 +5,11 @@ public class CheckersGameMain {
     private GameFrame gui;
 
     public static void main(String[] args) {
-        GameFrame gui=new GameFrame();
-        gui.setVisible(true);
+        CheckersGameMain checkersGame = new CheckersGameMain();
+        checkersGame.gui = new GameFrame();
+        //checkersGame.gui.setResizable(false);
+        checkersGame.gui.setBounds(0, 0, 1000, 1000);
+        //checkersGame.gui.pack();
+        checkersGame.gui.setVisible(true);
     }
 }

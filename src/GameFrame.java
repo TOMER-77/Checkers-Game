@@ -9,12 +9,14 @@ public class GameFrame extends JFrame {
 
     GameFrame() {
         this.setTitle("Checkers Game");
+        this.setBounds(0,0,600,600);
         this.setResizable(false);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         JComponent game = new CheckersGameEngine();
         this.add(game, BorderLayout.CENTER);
-        this.pack();
+        //this.pack();
         this.setLocationRelativeTo(null);
+        //this.pack();
         this.setVisible(true);
     }
 }

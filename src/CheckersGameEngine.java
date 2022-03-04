@@ -49,7 +49,7 @@ public class CheckersGameEngine extends JComponent {
         this.add(turnIndicator);
         this.setPreferredSize(new Dimension(boardIMG.getIconWidth(), boardIMG.getIconHeight() + TURN_INDICATOR_HEIGHT));
         this.setVisible(true);
-        this.requestFocus();
+        this.requestFocusInWindow();
 
         //Initializing new game
         gameManager.initializeGame();
