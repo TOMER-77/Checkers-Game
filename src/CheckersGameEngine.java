@@ -74,6 +74,7 @@ public class CheckersGameEngine extends JComponent {
 
     @Override
     protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
         //Painting the game board.
         boardIMG.paintIcon(this, g, 0, 0);
         //Highlighting the piece that was chosen by a player.
