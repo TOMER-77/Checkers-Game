@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 
 /**
  * Initializes the game ,draws the board and reacts to the player's mouse clicks.
@@ -11,10 +13,13 @@ public class CheckersGameEngine extends JComponent {
     static final int COL_SIZE = 8;
     static final int TURN_INDICATOR_HEIGHT = 20;
 
+    //TODO
+    private ScheduledExecutorService timer = Executors.newScheduledThreadPool(1);
+
     //Paths for images that will be used for the animation
-    static final String BOARD_PATH = "images\\board.png";
-    static final String CHOSEN_PATH = "images\\chosen.png";
-    static final String POSSIBLE_MOVE_PATH = "images\\possibleMove.png";
+    static final String BOARD_PATH = "images/board.png";
+    static final String CHOSEN_PATH = "images/chosen.png";
+    static final String POSSIBLE_MOVE_PATH = "images/possibleMove.png";
 
     private MouseAdapter mouseAdapter;
     //Height and width of each square on the board.
@@ -62,7 +67,10 @@ public class CheckersGameEngine extends JComponent {
     public void drawGameBoard() {
         this.turnIndicator.updateTurn();
         this.repaint();
+
     }
+
+    int i = 0;
 
     @Override
     protected void paintComponent(Graphics g) {
