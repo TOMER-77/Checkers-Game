@@ -15,6 +15,5 @@ public class GameFrame extends JFrame {
         this.add(game, BorderLayout.CENTER);
         this.pack();
         this.setLocationRelativeTo(null);
-        this.setVisible(true);
     }
 }

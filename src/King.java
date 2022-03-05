@@ -7,8 +7,8 @@ import java.util.ArrayList;
  */
 public class King extends Piece {
     //Paths for images that will be used for the animation
-    static final String WHITE_KING_PATH = "images\\whiteKing.png";
-    static final String BLACK_KING_PATH = "images\\blackKing.png";
+    static final String WHITE_KING_PATH = "images/whiteKing.png";
+    static final String BLACK_KING_PATH = "images/blackKing.png";
 
     public King(int x, int y, boolean isWhite) {
         super(x, y, isWhite);

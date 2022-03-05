@@ -6,8 +6,8 @@ import java.util.ArrayList;
  */
 public class RegularPiece extends Piece {
     //Paths for images that will be used for the animation
-    static final String WHITE_PIECE_PATH = "images\\whitePiece.png";
-    static final String BLACK_PIECE_PATH = "images\\blackPiece.png";
+    static final String WHITE_PIECE_PATH = "images/whitePiece.png";
+    static final String BLACK_PIECE_PATH = "images/blackPiece.png";
 
     public RegularPiece(int x, int y, boolean isWhite) {
         super(x, y, isWhite);
