@@ -12,11 +12,11 @@ public class EndGameFrame extends JFrame {
     public EndGameFrame(String message, GameManager game, CheckersGameEngine engine) {
         //Setting the frame properties
         this.setLayout(null);
-        this.setSize(220,220);
+        this.setSize(220, 220);
         this.setTitle("We have a winner!");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
-        this.setLayout(new GridLayout(3,1));
+        this.setLayout(new GridLayout(3, 1));
 
         //Adding a text message which declares who won
         JLabel winnerLabel = new JLabel(message + " Thank you for playing!", JLabel.CENTER);

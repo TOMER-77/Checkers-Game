@@ -131,6 +131,7 @@ public class DefaultGameManager extends GameManager {
 
     /**
      * Crowning a piece (promoting regular piece to a king)
+     *
      * @param attackingPiece The piece which will be replaced by a king
      */
     private void crown(Piece attackingPiece) {
@@ -214,4 +215,3 @@ public class DefaultGameManager extends GameManager {
         this.whiteKings.clear();
     }
 }
-

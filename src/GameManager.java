@@ -7,11 +7,6 @@ import java.util.ArrayList;
 public abstract class GameManager {
     static final int ROW_SIZE = 8;
     static final int COL_SIZE = 8;
-    //Paths for images that will be used for the animation
-    static final String WHITE_PIECE_PATH = "images\\whitePiece.png";
-    static final String WHITE_KING_PATH = "images\\whiteKing.png";
-    static final String BLACK_PIECE_PATH = "images\\blackPiece.png";
-    static final String BLACK_KING_PATH = "images\\blackKing.png";
 
     protected boolean mustJump; //true if jumping over the opponent is mandatory (if possible)
     protected boolean isWhitesTurn; //true if the current turn is of the white player
