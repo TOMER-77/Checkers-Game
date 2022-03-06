@@ -10,7 +10,7 @@ The program supports a checkers game of Two human players. At each turn the curr
 
 ## Running the game
 
- 1. Download the game files or clone the project with the command: `https://github.com/TOMER-77/Checkers-Game.git`
+ 1. Download the game files or clone the project with the command: `git clone https://github.com/TOMER-77/Checkers-Game.git`
  2. Navigate to the src folder.
  3. Compile with `javac *.java`
  4. Run with `java CheckersGameMain`
